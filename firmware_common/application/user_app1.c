@@ -140,7 +140,7 @@ State Machine Function Definitions
 /* What does this state do? */
 static void UserApp1SM_Idle(void)
 {
-  static int password[] = {0,0,1,1};
+  static int password[] = {1,0,1,2};
   static int password_length = 4;
   static int user_input[4];
   static int count = 0;
