@@ -140,14 +140,6 @@ State Machine Function Definitions
 /* What does this state do? */
 static void UserApp1SM_Idle(void)
 {
-  
-} /* end UserApp1SM_Idle() */
-     
-
-/*-------------------------------------------------------------------------------------------------------------------*/
-/* Handle an error */
-static void UserApp1SM_Error(void)          
-{
   static int password[] = {1,0,1,2};
   static int password_length = 4;
   static int user_input[4];
@@ -221,6 +213,14 @@ static void UserApp1SM_Error(void)
   }
   compare = 0;
   }
+} /* end UserApp1SM_Idle() */
+     
+
+/*-------------------------------------------------------------------------------------------------------------------*/
+/* Handle an error */
+static void UserApp1SM_Error(void)          
+{
+  
 } /* end UserApp1SM_Error() */
 
 
